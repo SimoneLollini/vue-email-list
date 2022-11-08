@@ -8,7 +8,7 @@
 
 
 
-/*CDN da utilizzare 
+/*CDN da utilizzare nell head dell documento html IMPORTANTE: va aggiunto l'attributo defer
 https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js)*/
 
 const { createApp } = Vue
@@ -17,27 +17,24 @@ createApp({
     data() {
         return {
             message: 'Hello Vue!',
-            axios: ('https://flynn.boolean.careers/exercises/api/random/mail')
+
         }
     },
     mounthed() {
-        this.axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then(
+
+        )
     }
 }).mount('#app')
 
-// axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-//     .then(function (response) {
+//dovro utilizzare un ciclo for del tipo
+/*
+for (let index = 0; index < 10; index++) {
 
-//         console.log(response);
-//     })
-//     .catch(function (error) {
-
-//         console.log(error);
-//     })
-//     .then(function () {
-
-//     });
-
+    
+}
+*/
 
 
 
