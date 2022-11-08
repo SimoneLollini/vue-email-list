@@ -15,9 +15,16 @@
 <body>
 
     <div id="app">
-        <ul v-if="emailsList.length > 9">
-            <li v-for="email in emailsList">{{email}}</li>
-        </ul>
+        <div class="container m-5">
+            <h2 class="m-4 text-center">Lista email</h2>
+            <div class="wrapper d-flex flex-column align-items-center">
+                <ul v-if="emailsList.length > 9">
+                    <li class="mt-1" v-for="email in emailsList">{{email}}</li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
