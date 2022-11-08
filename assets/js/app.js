@@ -4,10 +4,6 @@
 // Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 
 
-
-
-
-
 /*CDN da utilizzare nell head dell documento html IMPORTANTE: va aggiunto l'attributo defer
 https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js)*/
 const emailsList = []
